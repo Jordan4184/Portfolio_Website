@@ -1,0 +1,20 @@
+.button {
+    display: block;
+    width: 200px;
+    margin: auto;
+    padding: 10px 20px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.button:hover {
+    background-color: turquoise;
+}
+
+.button h1 {
+    margin: 0;
+}
