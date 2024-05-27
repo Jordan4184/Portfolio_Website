@@ -1,7 +1,77 @@
+* {
+    box-sizing: border-box;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+.background-image {
+    position: absolute;
+    z-index: -1;
+}
+
+.intro-message {
+    color: white;
+    text-align: center;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
 body {
-    background-color: rgb(255, 255, 255);
+    font-family: 'Fira Code', monospace;
 }
 
 p {
     text-indent: 50px;
+    color: white;
+    margin: 20px 30px;
+    
 }
+
+.title {
+    text-align: right;
+    font-size: 25px;
+    font-weight: bold;
+    border: 3px solid aquamarine;
+    background-color: grey;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 auto;
+    width: auto;
+    color: white;
+}
+
+/*
+
+Include a CSS reset or normalize CSS at the top.
+Comments
+
+Use comments to divide your CSS into sections for easy navigation.
+General Styles
+
+Start with global styles that apply to the entire site.
+Layout
+
+Define the main layout styles, including the structure of the header, footer, main content areas, and sidebars.
+Components
+
+Style individual components such as buttons, forms, cards, etc.
+Utilities
+
+Add utility classes for reusable styles.
+Responsive Design
+
+Include media queries towards the end of your stylesheet.
+Naming Conventions
+
+Adopt a naming convention like BEM (Block Element Modifier).
+Preprocessors
+
+Consider using a CSS preprocessor like SASS or LESS.
+File Organization
+
+For larger projects, break your CSS into multiple files and import them into a main stylesheet.
+*/
