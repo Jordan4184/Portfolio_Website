@@ -14,6 +14,12 @@ body {
     background-color: rgb(4,4,4);
 }
 
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 p {
     text-indent: 50px;
     color: white;
@@ -25,6 +31,12 @@ a {
     text-decoration: none;
 }
 
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+}
 .specialty {
     color: white;
 }
@@ -35,16 +47,6 @@ a {
     margin: 0 auto;
     display: block;
     color: white;
-}
-
-footer {
-    background-color: #E5B80B;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
 
 .navbar {
@@ -62,6 +64,7 @@ footer {
     list-style: none;
     padding: 0;
     width: 80%;
+    align-items: center;
 }
 
 .navbar-nav li {
@@ -69,20 +72,22 @@ footer {
 }
 
 a:hover {
-    color: black;
+    color: white;
 }
 
 .title {
     text-align: right;
     font-size: 25px;
     font-weight: bold;
-    border: 3px solid #E5B80B;
-    background-color: rgb(66, 66, 66);
     border-radius: 4px;
     padding: 10px;
-    margin: 40px auto;
+    margin: 550px 0px auto;
     width: auto;
     color: white;
+}
+
+.title-text {
+    border-bottom: 2px solid #E5B80B; /* Adjust thickness and color as needed */
 }
 
 .background-image {
@@ -95,8 +100,23 @@ a:hover {
     text-align: center;
 }
 
+.page-container {
+    position: relative;
+}
 
+.content-wrap {
+    flex: 1 0 auto; /* This will make the content area grow to fill the available space */
+}
 
+.footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #E5B80B;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
 
 
 /*
