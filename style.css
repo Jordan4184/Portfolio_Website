@@ -1,28 +1,42 @@
-* {
-    box-sizing: border-box;
-  }
+/* style.css */
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
 
-body {
-    font-family: 'Fira Code', monospace;
-    background-color: rgb(4,4,4);
-}
-
-body, html {
+html, body {
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Fira Code', monospace;
+    background: url('https://wallpapers.com/images/featured/dark-mountain-gd3o1mx0wxezbewk.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    color: white;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content-wrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
 p {
     text-indent: 50px;
-    color: white;
     margin: 20px 30px;    
 }
 
@@ -31,22 +45,58 @@ a {
     text-decoration: none;
 }
 
+.title {
+    margin-top: 200px;
+    /*needs work here*/
+}
+
 .header {
     position: fixed;
     top: 0;
     width: 100%;
     height: 60px;
 }
-.specialty {
-    color: white;
+
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
 }
 
-.profile-photo {
+.about-me-text {
+    flex: 3;
+    padding-right: 20px;
+}
+
+.split-text {
+    text-align: justify;
+}
+
+.profile-photo, .additional-photo {
     width: 200px;
-    height: 200px;
-    margin: 0 auto;
-    display: block;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.about-me-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    margin-left: 20px;
+}
+
+.right-text {
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.about-me-header {
     color: white;
+    text-align: center;
+    padding: 100px 0 10px;
 }
 
 .navbar {
@@ -55,14 +105,12 @@ a {
     align-items: center;
     background-color: #E5B80B;
     padding: 10px 20px;
-    margin: 0 auto;
 }
 
 .navbar-nav {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    padding: 0;
     width: 80%;
     align-items: center;
 }
@@ -75,78 +123,12 @@ a:hover {
     color: white;
 }
 
-.title {
-    text-align: right;
-    font-size: 25px;
-    font-weight: bold;
-    border-radius: 4px;
-    padding: 10px;
-    margin: 550px 0px auto;
-    width: auto;
-    color: white;
-}
-
-.title-text {
-    border-bottom: 2px solid #E5B80B; /* Adjust thickness and color as needed */
-}
-
-.background-image {
-    position: absolute;
-    z-index: -1;
-}
-
-.intro-message {
-    color: white;
-    text-align: center;
-}
-
-.page-container {
-    position: relative;
-}
-
-.content-wrap {
-    flex: 1 0 auto; /* This will make the content area grow to fill the available space */
-}
-
 .footer {
-    position: fixed;
-    bottom: 0;
     background-color: #E5B80B;
     color: white;
     text-align: center;
     padding: 10px;
     width: 100%;
+    position: absolute;
+    bottom: 0;
 }
-
-
-/*
-
-Include a CSS reset or normalize CSS at the top.
-Comments
-
-Use comments to divide your CSS into sections for easy navigation.
-General Styles
-
-Start with global styles that apply to the entire site.
-Layout
-
-Define the main layout styles, including the structure of the header, footer, main content areas, and sidebars.
-Components
-
-Style individual components such as buttons, forms, cards, etc.
-Utilities
-
-Add utility classes for reusable styles.
-Responsive Design
-
-Include media queries towards the end of your stylesheet.
-Naming Conventions
-
-Adopt a naming convention like BEM (Block Element Modifier).
-Preprocessors
-
-Consider using a CSS preprocessor like SASS or LESS.
-File Organization
-
-For larger projects, break your CSS into multiple files and import them into a main stylesheet.
-*/
