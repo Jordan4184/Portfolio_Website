@@ -1,104 +1,28 @@
 /* style.css */
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
 
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
+                /*Global HTML*/
 
+
+/*body text and background*/
 body {
-    display: flex;
-    flex-direction: column;
     font-family: 'Fira Code', monospace;
     background: url('https://wallpapers.com/images/featured/dark-mountain-gd3o1mx0wxezbewk.jpg') no-repeat center center fixed; 
-    background-size: cover;
     color: white;
 }
 
-.page-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.content-wrap {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-p {
-    text-indent: 50px;
-    margin: 20px 30px;    
-}
-
+/*Navigation bar*/
 a {
     color: black;
     text-decoration: none;
 }
 
-.title {
-    margin-top: 200px;
-    /*needs work here*/
-}
-
-.header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 60px;
-}
-
-.about-me {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px;
-}
-
-.about-me-text {
-    flex: 3;
-    padding-right: 20px;
-}
-
-.split-text {
-    text-align: justify;
-}
-
-.profile-photo, .additional-photo {
-    width: 200px;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
-
-.about-me-right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex: 1;
-    margin-left: 20px;
-}
-
-.right-text {
-    text-align: justify;
-    margin-top: 20px;
-}
-
-.about-me-header {
-    color: white;
-    text-align: center;
-    padding: 100px 0 10px;
-}
-
+/*global nav bar*/
 .navbar {
     display: flex;
     justify-content: center;
@@ -107,6 +31,7 @@ a {
     padding: 10px 20px;
 }
 
+/*Additional Nav Styling*/
 .navbar-nav {
     display: flex;
     justify-content: space-between;
@@ -115,14 +40,12 @@ a {
     align-items: center;
 }
 
-.navbar-nav li {
-    margin-right: 20px;
-}
-
+/*Nav Hover*/
 a:hover {
     color: white;
 }
 
+/*Global Footer*/
 .footer {
     background-color: #E5B80B;
     color: white;
@@ -131,4 +54,66 @@ a:hover {
     width: 100%;
     position: absolute;
     bottom: 0;
+}
+
+
+                /*Home.html*/
+
+
+/*Title Container*/
+.title {
+    margin-top: 200px;
+    text-align: left;
+    width: 50%;
+    border: 2px solid red;
+}
+
+/*header styling*/
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+}
+
+
+                /*About.html*/
+
+
+/*Spacing for about me*/
+p {
+    text-indent: 50px;
+    margin: 20px 30px;    
+}
+
+/*About Me Container*/
+.about-me {
+    display: flex;
+    padding: 20px;
+}
+
+/*About Me Header*/
+.about-me-header {
+    color: white;
+    text-align: center;
+    padding: 100px 0 10px;
+    border: 2px solid red;
+    text-align: center;
+}
+
+/*Body of About Me*/
+.about-me-text {
+    flex: 3;
+    padding-right: 20px;
+    border: 2px solid red;
+    padding: 10px;
+}
+
+/*About Profile Photo */
+.about-profile-photo {
+    width: 350px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 2px solid red;
 }
