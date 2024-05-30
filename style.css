@@ -14,6 +14,7 @@ body {
     font-family: 'Fira Code', monospace;
     background: url('https://wallpapers.com/images/featured/dark-mountain-gd3o1mx0wxezbewk.jpg') no-repeat center center fixed; 
     color: white;
+    background-color: rgb(4,4,4);
 }
 
 /*Navigation bar*/
@@ -29,6 +30,7 @@ a {
     align-items: center;
     background-color: #E5B80B;
     padding: 10px 20px;
+    position: relative;
 }
 
 /*Additional Nav Styling*/
@@ -52,7 +54,7 @@ a:hover {
     text-align: center;
     padding: 10px;
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
 }
 
@@ -62,9 +64,9 @@ a:hover {
 
 /*Title Container*/
 .title {
-    margin-top: 200px;
-    text-align: left;
+    margin-top: 162px;
     width: 50%;
+    margin-left: 10%;
     border: 2px solid red;
 }
 
@@ -76,6 +78,27 @@ a:hover {
     height: 60px;
 }
 
+.profile-photo {
+    display: inline;
+    border: 2px solid red;
+    height: auto;
+    width: 40%;
+    position: absolute;
+    left: 475px;
+    top: 200px;
+}
+
+.title-text {
+    text-align: left;
+    font-size: 40px;
+    border: 2px solid red;
+}
+
+.sub-title {
+    text-align: left;
+    font-size: 9px;
+    border: 2px solid red;
+}
 
                 /*About.html*/
 
@@ -87,7 +110,7 @@ p {
 }
 
 /*About Me Container*/
-.about-me {
+.about-me-1 {
     display: flex;
     padding: 20px;
 }
@@ -102,7 +125,7 @@ p {
 }
 
 /*Body of About Me*/
-.about-me-text {
+.about-me-text-1 {
     flex: 3;
     padding-right: 20px;
     border: 2px solid red;
@@ -117,3 +140,20 @@ p {
     margin-bottom: 20px;
     border: 2px solid red;
 }
+
+.about-me-2 {
+    display: flex;
+    padding: 35px 35px;
+    border: 2px solid red;
+}
+
+
+                /*projects*/
+
+
+
+                /*skills*/
+
+
+
+                /*contact*/
