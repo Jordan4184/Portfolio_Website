@@ -52,7 +52,10 @@ a {
     align-items: center;
     background-color: #E5B80B;
     padding: 10px 20px;
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 /*Additional Nav Styling*/
@@ -75,7 +78,7 @@ a:hover {
     text-align: center;
     padding: 10px;
     width: 100%;
-    position: fixed;
+    position: relative;
     bottom: 0;
 }
 
@@ -84,7 +87,9 @@ a:hover {
 
 .skills-section {
     padding: 0 50px;
-    margin-bottom: 100px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    /*may need to adjust height so about isn't pushed down so much*/
 }
 
 .skills-section h2 {
@@ -110,7 +115,7 @@ a:hover {
     justify-content: center;
     width: 200px;
     padding: 10px 20px;
-    border: 1.5px solid grey;
+    /*border: 1.5px solid #e5b80b;*/
     border-radius: 5px;
     margin: 10px;
 }
@@ -127,6 +132,72 @@ a:hover {
     font-size: 18px;
 }
 
+/*About me*/ 
+
+.testimony-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.testimony-section h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.testimony-section .group {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.testimony-section .group .person-details {
+    text-align: center;
+    flex: 2;
+    margin-bottom: 120px;
+}
+
+.testimony-section .group .text {
+    flex: 8;
+    margin-bottom: 100px;
+}
+
+.testimony-section .group .text .about-learn-more {
+    background-color: #E5B80B;
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 25px;
+    display: block;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.testimony-section .group .text .about-learn-more:hover {
+    background-color: rgb(3,3,3);
+    padding: 8px 20px;
+    font-weight: bold;
+    color: white;
+    border: 1px solid #E5B80B;
+    transition-duration: 0.1s;
+}
+
+.testimony-section .group .person-details img {
+    aspect-ratio: 1/1;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimony-section .group .person-details p {
+    font-weight: 600;
+}
+
+.testimony-section .group .person-details p:last-child {
+    font-weight: normal;
+}
+
+
                 /*Home.html*/
 
                 /*Hero Section*/
@@ -134,6 +205,10 @@ a:hover {
 @media (max-width: 850px) {
     .hero-section .text .h2 {
         font-size: 35px;
+    }
+    .testimony-section .group .text .about-learn-more {
+        padding: 10px;
+        font-weight: 20px;
     }
 }
 
@@ -145,6 +220,14 @@ a:hover {
     .hero-section .profile-photo {
         width: 300px;
     }
+
+    .testimony-section {
+        text-align: center;
+    }
+
+    .testimony-section .group {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 600px) {
@@ -155,6 +238,21 @@ a:hover {
     .skills-section .cells .cell span {
         font-size: 16px;
     }
+
+    .testimony-section {
+        text-align: center;
+    }
+
+    .testimony-section .group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimony-section .group .text .about-learn-more {
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
 }
 
 /*Hero Section*/
@@ -178,6 +276,7 @@ a:hover {
     width: 400px;
     border-radius: 50%;
     display: flex;
+    /*add aspect ration here once clipped*/
     justify-content: right;margin-bottom: 50px;
 }
 
