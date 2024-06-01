@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Personal Portfolio</title>
+    <title>Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Portfolio website exhibiting projects and personal information">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="Jordan Donaldson">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <div class="page-container">
         <div class="content-wrap">
             <header>
+                <!--Nav Bar-->
                 <nav class="navbar">
                     <ul class="navbar-nav">
                         <!--Navigation Menu-->
@@ -25,40 +27,98 @@
                 </nav>
             </header>
             <main>
-                <section class="intro">
-                    <div class="title">
+                <!--Hero section-->
+                <section class="hero-section">
+                    <div class="text">
                         <h2 class="title-text">Full-Stack Developer with a Focus on XXXXXXX & YYYYYYYY</h2>
-                        <p class="sub-title">Currently based in Las Vegas, NV working as an AI Technician</p>
-                        <figure>
-                            <img class="profile-photo" src="/images/profile photo.png" alt="profile photo">
-                        </figure>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus deserunt ea dolor, nisi ab aliquam voluptates rem fuga id voluptate quibusdam ad, numquam, ut pariatur? Delectus dolor quo commodi nam nulla eveniet molestias? Quos optio quasi unde beatae id nihil, voluptates numquam molestias quis ratione deleniti doloremque iure deserunt maiores.</p>
+                        
                         <button class="header-learn-more">
                             <a href='skills.html'>Learn More</a> 
                         </button>
                     </div>
+                    <div>
+                        <img class="profile-photo" src="/images/Cropped Profile Photo.png" alt="profile photo">
+                    </div>
+                    
+                </section>
+
+                <!--Skills Section-->
+                <section id='skills'class="skills-section">
+                    <h2>Tech Stack</h2>
+
+                    <div class="text">
+                        Lorem, ipsum dolor sit amet eos odit quod atque expedita asperiores quas itaque!
+                    </div>
+
+                    <div class="cells">
+                        <div class="cell">
+                            <!--Need to fix image, not working-->
+                            <img src="/images/html5_logo.svg" alt="HTML Logo">
+                            <span>HTML</span>
+                        </div>
+
+                        <div class="cell">
+                            <!--Need to fix image, not working-->
+                            <img src="/images/css3-alt.svg" alt="CSS Logo">
+                            <span>CSS</span>
+                        </div>
+
+                        <div class="cell">
+                            <!--Need to fix image, not working-->
+                            <img src="/images/js.svg" alt="JavaScript Logo">
+                            <span>JavaScript</span>
+                        </div>
+
+                        <div class="cell">
+                            <!--Need to fix image, not working-->
+                            <img src="/images/python.svg" alt="Python Logo">
+                            <span>Python</span>
+                        </div>
+
+                        <div class="cell">
+                            <!--Need to fix image, not working-->
+                            <img src="/images/github.svg" alt="GitHub Logo">
+                            <span>GitHub</span>
+                        </div>
+
+                        <div class="cell">
+                            <!--Need to fix image, not working-->
+                            <img src="/images/react.svg" alt="React Logo">
+                            <span>React</span>
+                        </div>
+
+                        <div class="cell">
+                            <!--Need to fix image, not working-->
+                            <img src="/images/node-js.svg" alt="Node.js Logo">
+                            <span>Node.js</span>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!--Testimony-->
+                <section id='Testimony'>
+                    
+                </section>
+                
+                <!--Contact-->
+                <section id='contact'>
+                    
                 </section>
             </main>
-            <div>
-            <!--CTA Button-->
-            <!--View my Projects-->
-            </div>
-            <div>
-            <!--Contact Section-->
-                <!--Contact form-->
-                    <!--Name-->
-                    <!--Phone Number-->
-                    <!--Email-->
-                    <!--Message-->
-                    <!--Submit Button-->
-                <!--Professional Links-->
-                    <!--LinkedIn-->
-                    <!--GitHub-->
-            </div>
         </div>
         <footer class="footer">
             <!--Quick Links-->
-            <a href="#">LinkedIn</a>
-            <a href="#">GitHub</a>
+
+            <a href="LinkedIn.com" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+            <a href="GitHub.com" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+                <span>LinkedIn</span>
+            </a>
         </footer>
     </div>
 </body>
