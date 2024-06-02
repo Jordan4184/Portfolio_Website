@@ -28,8 +28,6 @@ html{
     background-attachment: scroll;
     padding: 100px 20px;
     height: 75vh;
-
-
     margin-bottom: 100px;
 }
 
@@ -97,6 +95,15 @@ a:hover {
     text-align: center;
 }
 
+.skills-section h2::after {
+    content: "";
+    display: block;
+    width: auto;
+    height: 4px;
+    background-color: #E5B80B;
+    margin: 10px auto 0 auto;
+}
+
 .skills-section .text {
     margin-bottom: 20px;
     text-align: center;
@@ -136,13 +143,23 @@ a:hover {
 
 .testimony-section {
     padding: 0 50px;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 }
 
 .testimony-section h2 {
     font-size: 35px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     text-align: center;
+    position: relative;
+}
+
+.testimony-section h2::after {
+    content: "";
+    display: block;
+    width: auto;
+    height: 4px;
+    background-color: #E5B80B;
+    margin: 10px auto 0 auto;
 }
 
 .testimony-section .group {
@@ -154,12 +171,10 @@ a:hover {
 .testimony-section .group .person-details {
     text-align: center;
     flex: 2;
-    margin-bottom: 120px;
 }
 
 .testimony-section .group .text {
     flex: 8;
-    margin-bottom: 100px;
 }
 
 .testimony-section .group .text .about-learn-more {
@@ -227,6 +242,7 @@ a:hover {
 
     .testimony-section .group {
         flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -238,7 +254,8 @@ a:hover {
     .skills-section .cells .cell span {
         font-size: 16px;
     }
-
+    
+    /*Testimony Section*/
     .testimony-section {
         text-align: center;
     }
@@ -251,6 +268,24 @@ a:hover {
     .testimony-section .group .text .about-learn-more {
         margin: 0 auto;
         margin-top: 40px;
+    }
+
+    /*Portfolio section*/
+    .portfolio-section {
+        padding: 0 20px;
+    }
+    
+    .portfolio-section .projects {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .portfolio-section .projects .project {
+        flex: 1 1 100%;
+    }
+
+    .portfolio-section .projects .project-details img {
+        max-width: 100%;
     }
 
 }
@@ -305,6 +340,82 @@ a:hover {
     transition: 0.1s;
     color: rgb(3,3,3);
 }
+
+                /*Portfolio Projects*/
+/*Portfolio Projects*/
+
+.portfolio-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.portfolio-section h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.portfolio-section h2::after {
+    content: "";
+    display: block;
+    width: auto;
+    height: 4px;
+    background-color: #E5B80B;
+    margin: 10px auto 0 auto;
+}
+
+.portfolio-section .projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.portfolio-section .projects .project {
+    flex: 1;
+    text-align: left;
+}
+
+.portfolio-section .projects .project-details {
+    margin-bottom: 10px;
+}
+
+.portfolio-section .projects .project-details img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+}
+
+.portfolio-section .projects .text1, 
+.portfolio-section .projects .text2 {
+    margin-top: 20px;
+}
+
+.portfolio-section .projects .text1 .project-learn-more-1, 
+.portfolio-section .projects .text2 .project-learn-more-2 {
+    background-color: #E5B80B;
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 25px;
+    display: block;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgb(3,3,3);
+    transition: 0.1s;
+}
+
+.portfolio-section .projects .text1 .project-learn-more-1:hover, 
+.portfolio-section .projects .text2 .project-learn-more-2:hover {
+    background-color: rgb(3,3,3);
+    padding: 8px 20px;
+    font-weight: bold;
+    color: white;
+    border: 1px solid #E5B80B;
+    transition-duration: 0.1s;
+}
+
+
 
 
                 /*About.html*/
