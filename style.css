@@ -27,7 +27,7 @@ html{
     background-size: cover;
     background-attachment: scroll;
     padding: 100px 20px;
-    height: 75vh;
+    height: 60vh;
     margin-bottom: 100px;
 }
 
@@ -212,6 +212,26 @@ a:hover {
     font-weight: normal;
 }
 
+                /*Quote Section*/
+
+.quote-section {
+    background-color: rgb(3,3,3);
+    padding: 50px 20px;
+    margin-bottom: 30px;
+}
+
+.quote {
+    color: #E5B80B;
+    text-align: center;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.quote-name {
+    font-weight: bold;
+    text-align: center;
+    margin: 50px;
+}
 
                 /*Home.html*/
 
@@ -288,6 +308,12 @@ a:hover {
         max-width: 100%;
     }
 
+    .about-me .about-me-text .about-body {
+        padding: 0px;
+        margin: 0px;
+        text-align: left;
+    }
+
 }
 
 /*Hero Section*/
@@ -342,7 +368,7 @@ a:hover {
 }
 
                 /*Portfolio Projects*/
-/*Portfolio Projects*/
+
 
 .portfolio-section {
     padding: 0 50px;
@@ -420,9 +446,15 @@ a:hover {
 
                 /*About.html*/
 
+.about-me {
+    background: url('https://wallpapers.com/images/featured/dark-mountain-gd3o1mx0wxezbewk.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: scroll;
+    min-height: 75vh;
+}
+
 /*About Me Container*/
 .about-me {
-    border: 2px solid rgb(0, 255, 115);
     display: flex;
     justify-content: space-between;
     padding: 0px 50px;
@@ -434,19 +466,61 @@ a:hover {
 
 /*About Me Header*/
 .about-me-header {
-    border: 2px solid red;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size:xx-large;
 }
 
-/*Body of About Me*/
+.about-me-header::after {
+    content: "";
+    display: block;
+    width: auto;
+    height: 4px;
+    background-color: #E5B80B;
+    margin: 10px auto 0 auto;
+}
+
 .about-me-text {
-    border: 2px solid rgb(255, 230, 0);
+    padding: 0px 50px 50px 50px;
 }
 
-/*About Profile Photo */
-.about-profile-photo {
-    border: 2px solid red;
+.about-body {
+    justify-content: space-between;
+    padding: 0px 50px;
+    align-items: center;
+    margin-bottom: 0px;
 }
 
+.about-body p {
+    margin: 20px 0;
+    text-indent: 30px;
+    font-size: 18px;
+}
+
+.about-me .about-me-text .contact-me-button {
+    background-color: #E5B80B;
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 25px;
+    display: block;
+    margin-top: 50px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgb(3,3,3);
+    transition: 0.1s;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.about-me .about-me-text .contact-me-button:hover {
+    background-color: rgb(3,3,3);
+    padding: 15px 30px;
+    font-weight: bold;
+    color: white;
+    border: 1px solid #E5B80B;
+    transition-duration: 0.1s;
+}
 
 
                 /*projects*/
