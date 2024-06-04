@@ -454,7 +454,7 @@ a:hover {
 
 
 
-                /*About.html*/
+                /*PAGE:About.html*/
 
 .about-me {
     background: url('https://wallpapers.com/images/featured/dark-mountain-gd3o1mx0wxezbewk.jpg') no-repeat center center fixed;
@@ -535,10 +535,98 @@ a:hover {
 
                 /*projects*/
 
+@media(max-width: 800px) {
+
+    .box3 {
+        order: 4;
+    }
+
+    .box4 {
+        order: 3;
+    }
+
+    .box5 {
+        order: 5;
+    }
+
+    .box6 {
+        order: 6;
+    }
+}
+ 
+
+.page-header {
+    font-size: 30px;
+    color: white;
+    margin-top: 100px;
+    text-align: center;
+    background-color: black;
+    font-weight: bolder;
+ }  
+
+.container {
+    display: grid;
+    width: auto;
+    height: auto;
+    background-color: black;
+    justify-content: center;
+    margin: 50px 0px 100px 0px;
+    grid-template: 300px 300px 300px/500px 500px;
+    
+    grid-template-columns: repeat(auto-fit, minmax(300px, 450px));
+}
+
+.box1 {
+    background-color:#E5B80B;
+    background: linear-gradient(to right, #E5B80B, black);
+    border-radius: 15px; 
+    text-align: center;
+    align-content: center;
+}
+
+.box2 {
+    background-color: black;
+    text-align: center;
+    align-content: center;
+}
+
+.box3 {
+    background-color: black;
+    text-align: center;
+    align-content: center;
+    margin: 100px 0px;
+}
+
+.box4 {
+    background-color:#E5B80B;
+    border-radius: 15px;
+    background: linear-gradient(to left, #E5B80B, black);
+    min-height: 300px;
+    text-align: center;
+    align-content: center;
+}
+
+.box5 {
+    background-color:#E5B80B;
+    border-radius: 15px;
+    background: linear-gradient(to right, #E5B80B, black);
+    text-align: center;
+    align-content: center;
+    min-height: 300px;
+}
+
+.box6 {
+    background-color: black;
+    text-align: center;
+    align-content: center;
+    margin: 100px 0px;
+}
 
 
                 /*skills*/
 
 
+
+                
 
                 /*contact*/
