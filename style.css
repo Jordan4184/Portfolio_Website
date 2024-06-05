@@ -560,7 +560,7 @@ a:hover {
     color: white;
     margin-top: 100px;
     text-align: center;
-    background-color: black;
+    background-color: rgb(3,3,3);
     font-weight: bolder;
  }  
 
@@ -568,7 +568,7 @@ a:hover {
     display: grid;
     width: auto;
     height: auto;
-    background-color: black;
+    background-color: rgb(3,3,3);
     justify-content: center;
     margin: 50px 0px 100px 0px;
     grid-template: 300px 300px 300px/500px 500px;
@@ -578,20 +578,20 @@ a:hover {
 
 .box1 {
     background-color:#E5B80B;
-    background: linear-gradient(to right, #E5B80B, black);
+    background: linear-gradient(to right, #E5B80B, rgb(3,3,3));
     border-radius: 15px; 
     text-align: center;
     align-content: center;
 }
 
 .box2 {
-    background-color: black;
+    background-color: rgb(3,3,3);
     text-align: center;
     align-content: center;
 }
 
 .box3 {
-    background-color: black;
+    background-color: rgb(3,3,3);
     text-align: center;
     align-content: center;
     margin: 100px 0px;
@@ -600,7 +600,7 @@ a:hover {
 .box4 {
     background-color:#E5B80B;
     border-radius: 15px;
-    background: linear-gradient(to left, #E5B80B, black);
+    background: linear-gradient(to left, #E5B80B, rgb(3,3,3));
     min-height: 300px;
     text-align: center;
     align-content: center;
@@ -609,14 +609,14 @@ a:hover {
 .box5 {
     background-color:#E5B80B;
     border-radius: 15px;
-    background: linear-gradient(to right, #E5B80B, black);
+    background: linear-gradient(to right, #E5B80B, rgb(3,3,3));
     text-align: center;
     align-content: center;
     min-height: 300px;
 }
 
 .box6 {
-    background-color: black;
+    background-color: rgb(3,3,3);
     text-align: center;
     align-content: center;
     margin: 100px 0px;
@@ -627,6 +627,6 @@ a:hover {
 
 
 
-                
+
 
                 /*contact*/
