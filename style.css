@@ -347,7 +347,7 @@ a:hover {
     width: 400px;
     border-radius: 50%;
     display: flex;
-    /*add aspect ration here once clipped*/
+    /*add aspect ratio here once clipped*/
     justify-content: right;margin-bottom: 50px;
 }
 
