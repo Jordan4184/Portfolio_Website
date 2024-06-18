@@ -459,6 +459,7 @@ a:hover {
 
 .about-me {
     background: url('https://wallpapers.com/images/featured/dark-mountain-gd3o1mx0wxezbewk.jpg') no-repeat center center fixed;
+    min-height: 100vh;
     background-size: cover;
     background-attachment: scroll;
     min-height: 75vh;
@@ -469,7 +470,7 @@ a:hover {
     display: flex;
     justify-content: space-between;
     padding: 0px 50px;
-    margin: 150px 0;
+    min-height: 100vh;
     align-items: center;
     gap: 40px;
     margin-bottom: 100px;
@@ -480,7 +481,7 @@ a:hover {
     text-align: center;
     margin-bottom: 50px;
     font-weight: bold;
-    font-size:xx-large;
+    font-size: 80px;
 }
 
 .about-me-header::after {
@@ -521,7 +522,7 @@ a:hover {
     color: rgb(3,3,3);
     transition: 0.1s;
     text-align: center;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 .about-me .about-me-text .contact-me-button:hover {
@@ -558,6 +559,7 @@ a:hover {
 .project-section {
     max-width: 1300px;
     margin: 0 auto;
+    min-height: 89vh
 }
 
  
