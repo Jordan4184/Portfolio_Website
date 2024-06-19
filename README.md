@@ -1,5 +1,5 @@
 **Portfolio Website**
 
-README and Site Under Construction
+Site and Projects Under Construction
 
 Check back later for more!
