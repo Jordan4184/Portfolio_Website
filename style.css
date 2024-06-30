@@ -639,6 +639,13 @@ a:hover {
 
                 /*contact*/
 
+.contact-me {
+    background: url(./images/mountains\ for\ contact\ me.png) no-repeat center center fixed;
+    min-height: 100vh;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
 .contact-me-container {
     display: flex;
     flex-direction: column;
@@ -647,17 +654,16 @@ a:hover {
     min-height: 90vh;
     align-items: center;
     gap: 40px;
-    margin: 100px;
-    border: 5px solid #E5B80B;
 }
 
 .contact-me-header {
     text-align: center;
-    margin-bottom: 50px;
+    margin-top: 100px;
     font-weight: bold;
     font-size: 80px;
-    border: 5px solid #E5B80B;
+    border-bottom: 5px solid #E5B80B;
     width: 100%;
+    padding: 40px;
 }
 
 .contact-form-container {
@@ -665,7 +671,6 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 5px solid #E5B80B;
     width: 100%;
 }
 
@@ -674,6 +679,87 @@ a:hover {
     font-weight: bold;
     margin-top: 20px;
 }
+
+.input-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    width: 100%; /* Use 100% width */
+    max-width: 600px; /* Set a max-width for better alignment */
+}
+
+.input-wrapper input,
+.input-wrapper textarea {
+    flex-grow: 1; /* Allow the input and textarea to grow and take available space */
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.input-wrapper label {
+    width: 250px; /* Set a fixed width for the labels */
+    line-height: 1;
+}
+
+.contact-me-button {
+    background-color: #E5B80B;
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 25px;
+    display: block;
+    margin-top: 50px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgb(3, 3, 3);
+    transition: 0.1s;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.contact-me-button:hover {
+    background-color: rgb(3, 3, 3);
+    padding: 15px 30px;
+    font-weight: bold;
+    color: white;
+    border: 1px solid #E5B80B;
+    transition-duration: 0.1s;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .contact-me-container {
+        padding: 0px 20px;
+    }
+
+    .input-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .input-wrapper input,
+    .input-wrapper textarea {
+        width: 100%;
+    }
+
+    .input-wrapper label {
+        width: auto;
+    }
+
+    .contact-form-container label {
+        font-size: 2rem;
+    }
+
+    .contact-me-header {
+        font-size: 50px;
+        padding: 20px;
+    }
+}
+
+                /*Footer*/
 
 /*To Do*/
 /*adjust responsiveness of divs on skills section*/
