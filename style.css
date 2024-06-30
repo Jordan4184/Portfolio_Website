@@ -639,6 +639,41 @@ a:hover {
 
                 /*contact*/
 
+.contact-me-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0px 100px;
+    min-height: 90vh;
+    align-items: center;
+    gap: 40px;
+    margin: 100px;
+    border: 5px solid #E5B80B;
+}
+
+.contact-me-header {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 80px;
+    border: 5px solid #E5B80B;
+    width: 100%;
+}
+
+.contact-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #E5B80B;
+    width: 100%;
+}
+
+.contact-form-container label {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
 
 /*To Do*/
 /*adjust responsiveness of divs on skills section*/

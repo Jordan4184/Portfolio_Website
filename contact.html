@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Me</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio website exhibiting projects and personal information">
+    <meta name="keywords" content="HTML, CSS, JavaScript, About Me">
+    <meta name="author" content="Jordan Donaldson">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navbar-nav">
+                <!--Navigation Menu-->
+                <li><a href="portfolio_site.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li> 
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Contact Me Form-->
+    <section class="contact-me">
+        <div class="contact-me-container">
+            <h1 class="contact-me-header">Contact Me</h1>
+            <form class="contact-form-container">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit" class="contact-me-button">Submit</button>
+            </form>
+        </div>
+
+
+    <footer class="footer">
+        <!--Quick Links-->
+        <a href="LinkedIn.com" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin"></i>
+            <span>LinkedIn</span>
+        </a>
+        <a href="GitHub.com" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
+        </a>
+    </footer>
+</body>
+</html>
